@@ -1,0 +1,366 @@
+body {
+    font-family: "Lato", sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* -------------- Side bar Styles ------------- */
+
+.sidenav {
+    height: 100%;
+    /* width: 0; */
+    width: 18%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3c2d9c;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    background-image: url(img/sidebar_overlay.png) !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position-x: left !important;
+    background-position-y: bottom !important;
+    background-size: 2.6%;
+}
+
+#main img {
+    border-radius: 65%;
+    /* border-top-left-radius: 15px ;
+    border-bottom-left-radius: 19px; */
+    position: absolute;
+    /* left: 0%; */
+    left: 16.5%;
+    top: -60px;
+    font-size: 30px;
+    margin-top: 0;
+    border: 7px solid #fff;
+    z-index: 100;
+    background: #fff;
+}
+
+#head,
+.mid-sec {
+    transition: 0.5s;
+    padding: 10px 25px 10px;
+    height: 65px;
+    border-bottom: 1px solid #fffcfc;
+    /* margin: 25px 25px 0 25px; */
+    margin: 15px 25px 0 250px;
+}
+
+.sidenav a {
+    padding: 10px 8px 8px 2px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    background-size: 2.8%;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 4%;
+    margin-top: 10%;
+    right: -18px;
+    /* font-size: 36px; */
+    margin-left: 50px;
+    padding: 0 6px;
+}
+
+#head {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    z-index: 10;
+    position: sticky;
+    top: 20%;
+}
+
+.logo {
+    padding-left: 10%;
+}
+
+.side-list {
+    margin-top: 20px;
+}
+
+.top-sec {
+    margin-top: 45px !important;
+}
+
+.list-sec {
+    display: flex;
+}
+
+.list-sec img {
+    margin: 10px 29px;
+    width: 20px;
+    height: 18px;
+}
+
+.list-sec p {
+    margin: 10px 0px;
+    color: #fff;
+    font-size: 13px;
+    
+}
+
+.line {
+    border: 1px solid #b1b1b1;
+    width: 40px;
+    margin-left: 11%;
+    margin-top: 5%;
+}
+
+.side-foot {
+    position: absolute;
+    bottom: 20px;
+}
+
+.side-foot img {
+    margin: 0 20px;
+}
+
+
+/* --------------- Header styles ------------- */
+
+select {
+    padding: 5px;
+    font-size: 12px !important;
+    width: 120px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    outline: none;
+}
+
+.add-btn {
+    color: #382f9c;
+    border: unset;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    background-color: #e8e7f3;
+}
+
+
+/* ------------- mid sec-------------- */
+
+.mid-sec {
+    height: auto;
+    margin-top: 0;
+    border: unset;
+    background: #f1f1f1;
+    padding: 20px 25px;
+}
+
+.rep-sec {
+    padding: 0 25px;
+}
+
+
+
+.view-btn button {
+    color:#382f9c;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 5px 10px;
+    margin-right: 25px;
+    border: unset;
+    background-color:#e8e7f3;
+}
+
+.view-tbl {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.view-tbl th {
+    font-size: 12px;
+}
+
+.tbl-info tr td {
+    font-size: 11px;
+    padding: 10px 10px;
+}
+
+.tbl-info tr td span {
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-right: 5px;
+    /* border: 1px solid #c1c1c1; */
+}
+
+.week-act {
+    background: #4c09a6;
+    border-radius: 10px;
+    margin-top: 12%;
+}
+
+.worksec {
+    border : 1px solid rgb(185, 185, 185);
+    border-radius: 10px;
+    margin-top: 10%;
+    background: #f4f4f4;
+}
+
+.week-act div,
+.worksec div {
+    padding: 0 5px;
+}
+
+.bar {
+    margin-top: 10px;
+    margin-left: 12px;
+    padding: 8px;
+    background: #5346bb;
+    border-radius: 5px;
+    width: 35px;
+}
+
+.timer {
+    padding: 8px;
+    border-radius: 5px;
+    width: 35px;
+    border: 1px solid #c1c1c1;
+    /* background: #b1b1b1; */
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.worksec-p p {
+    margin: 6px 0;
+    font-size: 10px;
+}
+
+.week-act-p p {
+    margin: 6px 0;
+    font-size: 10px;
+    color: #e1e1e1;
+}
+
+.p-per {
+    font-size: 15px !important;
+    font-weight: 600;
+}
+
+.per button {
+    font-size: 13px;
+    width: 60px;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: unset;
+    background: #3cc384;
+    color: #fff;
+    padding: 2px;
+}
+
+.per-we button {
+    font-size: 12px;
+    width: 60px;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: unset;
+    background: #eecfcf;
+    color: rgb(241, 58, 58);
+    padding: 2px;
+}
+
+.export {
+    margin-top: 8%;
+    color: #4239a1;
+}
+
+.export button {
+    margin-top: 7%;
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #4239a1;
+    border-radius: 5px;
+    color: #4239a1;
+}
+
+.export button span img {
+    margin: 0 20px;
+}
+
+.date-sec p {
+    font-size: 12px;
+    margin: 2px 0;
+    text-align: center;
+}
+
+.day {
+    font-size: 16px !important;
+    font-weight: 600;
+}
+
+.to-do {
+    margin-top: 15px;
+}
+
+.to-do .row {
+    margin-top: 4%;
+}
+
+.img-sec {
+    margin-top: 25px;
+    position: relative;
+}
+
+.img-sec p {
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.img-sec div img {
+    width: 25px;
+}
+
+.img-sec span {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.rewamp {
+    position: relative;
+    background-color: #fff;
+    padding: 5px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.rewamp p {
+    font-size: 12px;
+    margin: 2px 0;
+}
+
+.rewamp img {
+    position: absolute;
+    top: 20px;
+    right: 10%;
+}
+/* 404 */
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+

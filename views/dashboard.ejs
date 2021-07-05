@@ -1,0 +1,238 @@
+<%- include('partials/main')  %> 
+   <%- include('partials/sidebar')  %> 
+  <%- include('partials/header')  %> 
+    <div id="mid" class="mid-sec">
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-xl-8 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col-6">
+                        <h6>Timesheet</h6>
+                    </div>
+                    <div class="col-6 view-btn" align="right">
+                      <a href="/timesheet"><button>VIEW FULL SHEET</button></a>  
+                        <img src="img/more.png" alt="More Info">
+                    </div>
+                </div>
+                <table class="table table-bordered table-striped view-tbl">
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Date</th>
+                            <th>Start Time</th>
+                            <th>Stop Time</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbl-info">
+                        <tr>
+                            <td><span style="color: navy;background-color: lightblue;">1</span>Landing Page Design</td>
+                            <td>05-06-2021</td>
+                            <td>1:10pm</td>
+                            <td>3:09pm</td>
+                            <td>02:22:22</td>
+                        </tr>
+                        <tr>
+                            <td><span style="color: burlywood;background-color: pink;">3</span>Mobile App</td>
+                            <td>05-06-2021</td>
+                            <td>1:10pm</td>
+                            <td>3:09pm</td>
+                            <td>02:22:22</td>
+                        </tr>
+                        <tr>
+                            <td><span style="color: palevioletred;background-color: plum;">5</span>UI/UX</td>
+                            <td>05-06-2021</td>
+                            <td>1:10pm</td>
+                            <td>3:09pm</td>
+                            <td>02:22:22</td>
+                        </tr>
+                        <tr>
+                            <td><span style="color: blue;background-color: paleturquoise;">2</span>Website/apps</td>
+                            <td>05-06-2021</td>
+                            <td>1:10pm</td>
+                            <td>3:09pm</td>
+                            <td>02:22:22</td>
+                        </tr>
+                        <tr>
+                            <td><span style="color: orangered;background-color: plum; ">9</span>Branding</td>
+                            <td>05-06-2021</td>
+                            <td>1:10pm</td>
+                            <td>3:09pm</td>
+                            <td>02:22:22</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-12 rep-sec">
+                <h6>Report</h6>
+                <div class="row week-act">
+                    <div class="col-3">
+                        <img class="bar" src="img/graph.png" alt="">
+                    </div>
+                    <div class="col-6 week-act-p">
+                        <p>WEEKLY ACTIVITY</p>
+                        <p class="p-per">52%</p>
+                    </div>
+                    <div class="col-3 per">
+                        <button>17%</button>
+                    </div>
+                </div>
+                <div class="row worksec">
+                    <div class="col-3">
+                        <img class="timer" src="img/timer_blue.png" alt="">
+                    </div>
+                    <div class="col-6 worksec-p">
+                        <p>WORKED THIS WEEK</p>
+                        <p class="p-per">02:03:10</p>
+                    </div>
+                    <div class="col-3 per-we">
+                        <button>17%</button>
+                    </div>
+                </div>
+                <div class="export">
+                    <button id="button"><span><img src="img/pdf.png" alt=""></span>EXPORT AS PDF</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-xl-8 col-sm-12 col-12 to-do">
+                <h6>To-Do-lists</h6>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="date-sec">
+                            <p class="day">20</p>
+                            <p>May</p>
+                        </div>
+                    </div>
+                    <div class="col-11">
+                        <div class="rewamp">
+                            <p>Rewamp Instagram app</p>
+                            <p>Today</p>
+                            <img src="img/more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="date-sec">
+                            <p class="day">21</p>
+                            <p>May</p>
+                        </div>
+                    </div>
+                    <div class="col-11">
+                        <div class="rewamp">
+                            <p>Prototyping </p>
+                            <p>Today</p>
+                            <img src="img/more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div class="date-sec">
+                            <p class="day">22</p>
+                            <p>May</p>
+                        </div>
+                    </div>
+                    <div class="col-11">
+                        <div class="rewamp">
+                            <p>Collect Referencses for new project </p>
+                            <p>Today</p>
+                            <img src="img/more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-12">
+                <h6 style="margin-top: 6%;">Screenshots</h6>
+                <div class="img-sec">
+                    <div><img src="img/picture.png" alt=""><span>shot_1_attach_.png</span></div>
+                    <p>view</p>
+                </div>
+                <div class="img-sec">
+                    <div><img src="img/picture.png" alt=""><span>shot_2_attach_.png</span></div>
+                    <p>view</p>
+                </div>
+                <div class="img-sec">
+                    <div><img src="img/picture.png" alt=""><span>shot_3_attach_.png</span></div>
+                    <p>view</p>
+                </div>
+                <div class="export">
+                    <button>VEIW ALL</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Add Project </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form action="/" method="POST">
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row mb-4">
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="ProjectName" name="ProjectName"class="form-control" />
+                      <label class="form-label" for="ProjectName">Project Name </label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="ProjectID" name="ProjectID" class="form-control" />
+                      <label class="form-label" for="ProjectID">Project ID</label>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Text input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="ProjectManager" name="ProjectManager" class="form-control" />
+                  <label class="form-label" for="ProjectManager">Project Manager  </label>
+                </div>
+              
+                <!-- Text input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="TeamName" name="TeamName" class="form-control" />
+                  <label class="form-label" for="TeamName">Team Name</label>
+                </div>
+              
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="TeamLead" name="TeamLead" class="form-control" />
+                  <label class="form-label" for="TeamLead">Team Lead</label>
+                </div>
+              
+                <!-- Number input -->
+                <div class="form-outline mb-4">
+                  <input type="number" id="SectorNumber" name="SectorNumber" class="form-control" />
+                  <label class="form-label" for="SectorNumber">Sector Number</label>
+                </div>
+              
+                <!-- Message input -->
+                <div class="form-outline mb-4">
+                  <textarea class="form-control" id="AddInfo" name="AddInfo"rows="4"></textarea>
+                  <label class="form-label" for="AddInfo">Additional information</label>
+                </div>
+              
+            
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Sumbit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
