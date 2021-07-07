@@ -3,18 +3,29 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: rgb(209, 209, 209);        /* color of the tracking area */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #382f9c;    /* color of the scroll thumb */
+    border-radius: 32px;       /* roundness of the scroll thumb */
+    
+  }
 
 /* -------------- Side bar Styles ------------- */
 
 .sidenav {
-    height: 100%;
+    height: 100vh;
     /* width: 0; */
-    width: 18%;
-    position: fixed;
+    width: 100%;
+    /* position: fixed; */
     z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #3c2d9c;
+    /* top: 0;
+    left: 0; */
+    background-color: #382f9c;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 20px;
@@ -23,17 +34,39 @@ body {
     background-attachment: fixed !important;
     background-position-x: left !important;
     background-position-y: bottom !important;
-    background-size: 2.6%;
+    background-size: 3%;
+}
+
+#tog-arrow{
+    transition: margin-left .5s;
+    /* z-index: 10; */
+    position: relative;
+    top: 122%;
+    right: 102%;
+    padding-left: 80%;
+}
+
+#tog-arrow img{
+    border-radius: 50%;
+    position: absolute;
+    /* left: 0%; */
+    /* left: 16.5%;
+    top: -60px; */
+    right: -12.8px;
+    font-size: 30px;
+    margin-top: 0;
+    border: 7px solid #fff;
+    z-index: 100;
+    background: #fff;
 }
 
 #main img {
-    border-radius: 65%;
-    /* border-top-left-radius: 15px ;
-    border-bottom-left-radius: 19px; */
+    border-radius: 50%;
     position: absolute;
     /* left: 0%; */
-    left: 16.5%;
-    top: -60px;
+    /* left: 16.5%;
+    top: -60px; */
+    right: -12.8px;
     font-size: 30px;
     margin-top: 0;
     border: 7px solid #fff;
@@ -46,19 +79,18 @@ body {
     transition: 0.5s;
     padding: 10px 25px 10px;
     height: 65px;
-    border-bottom: 1px solid #fffcfc;
+    border-bottom: 1px solid #e1e1e1;
     /* margin: 25px 25px 0 25px; */
-    margin: 15px 25px 0 250px;
+    /* margin: 15px 25px 0 20%; */
 }
 
 .sidenav a {
-    padding: 10px 8px 8px 2px;
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 22px;
     color: #ffffff;
     display: block;
     transition: 0.3s;
-    background-size: 2.8%;
 }
 
 .sidenav .closebtn {
@@ -72,8 +104,8 @@ body {
 }
 
 #head {
-    z-index: 10;
-    position: sticky;
+    /* z-index: 10; */
+    /* position: sticky; */
     top: 0;
     background-color: #fff;
 }
@@ -81,7 +113,7 @@ body {
 #main {
     transition: margin-left .5s;
     padding: 16px;
-    z-index: 10;
+    /* z-index: 10; */
     position: sticky;
     top: 20%;
 }
@@ -112,7 +144,6 @@ body {
     margin: 10px 0px;
     color: #fff;
     font-size: 13px;
-    
 }
 
 .line {
@@ -124,7 +155,8 @@ body {
 
 .side-foot {
     position: absolute;
-    bottom: 20px;
+    bottom: 9px;
+    margin-left: 68px;
 }
 
 .side-foot img {
@@ -140,17 +172,30 @@ select {
     width: 120px;
     border: 1px solid #e1e1e1;
     border-radius: 5px;
-    outline: none;
 }
 
 .add-btn {
-    color: #382f9c;
+    color: #3c349e;
+    border-radius: 2.5px;
     border: unset;
     padding: 5px 12px;
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: bolder;
     letter-spacing: 1.4px;
-    background-color: #e8e7f3;
+    background-color: #bebbde;
+    outline: none;
+}
+
+.add-btn:hover {
+    color: #ffffff;
+    border-radius: 2.5px;
+    border: unset;
+    padding: 5px 12px;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 1.4px;
+    background-color: #3c349e;
+    outline: none;
 }
 
 
@@ -160,7 +205,6 @@ select {
     height: auto;
     margin-top: 0;
     border: unset;
-    background: #f1f1f1;
     padding: 20px 25px;
 }
 
@@ -169,16 +213,24 @@ select {
 }
 
 
-
 .view-btn button {
-    color:#382f9c;
+    color: #3c349e;
     font-weight: 500;
     font-size: 13px;
     padding: 5px 10px;
     margin-right: 25px;
     border: unset;
-    background-color:#e8e7f3;
+    background-color: #bebbde;
+    border-radius: 2.5px;
+    outline: none;
 }
+
+.view-btn button:hover {
+    color: #ffffff;
+    background-color: #3c349e;
+    
+}
+
 
 .view-tbl {
     width: 100%;
@@ -202,16 +254,24 @@ select {
 }
 
 .week-act {
-    background: #4c09a6;
+    background: #382f9c;
     border-radius: 10px;
     margin-top: 12%;
 }
 
+.week-act:hover{
+    background-color: #6c65b3;
+}
+
 .worksec {
-    border : 1px solid rgb(185, 185, 185);
     border-radius: 10px;
     margin-top: 10%;
     background: #f4f4f4;
+}
+.worksec:hover{
+    color: white;
+    background: #382f9c;
+   
 }
 
 .week-act div,
@@ -260,7 +320,7 @@ select {
     border-radius: 5px;
     margin-top: 15px;
     border: unset;
-    background: #3cc384;
+    background: #78eb78;
     color: #fff;
     padding: 2px;
 }
@@ -271,28 +331,31 @@ select {
     border-radius: 5px;
     margin-top: 15px;
     border: unset;
-    background: #eecfcf;
+    background: #f3acd5;
     color: rgb(241, 58, 58);
     padding: 2px;
 }
 
 .export {
     margin-top: 8%;
-    color: #4239a1;
 }
 
 .export button {
+    color: #3d349e;
     margin-top: 7%;
     width: 100%;
     padding: 5px;
     font-size: 12px;
-    border: 1px solid #4239a1;
+    border: 1px solid darkblue;
     border-radius: 5px;
-    color: #4239a1;
 }
 
 .export button span img {
     margin: 0 20px;
+}
+
+.date-sec{
+    padding: 10px;
 }
 
 .date-sec p {
@@ -319,12 +382,32 @@ select {
     position: relative;
 }
 
+.img-sec p:hover {
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    background: #3d349e;
+    padding: 0px 10px;
+    border-radius: 4px;
+    margin: 0;
+    height: 25px;
+    
+}
 .img-sec p {
     font-size: 12px;
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 0px;
+    background: #dbdbdb;
+    padding: 0px 10px;
+    border-radius: 4px;
+    margin: 0;
+    height: 25px;
+    cursor: pointer;
 }
+
 
 .img-sec div img {
     width: 25px;
@@ -337,14 +420,25 @@ select {
 
 .rewamp {
     position: relative;
-    background-color: #fff;
-    padding: 5px 10px;
+    padding:  18px;
+    border-radius: 6px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color:#f9f9f9;
+}
+
+.rewamp:hover{
+    border: solid 1px #c0c0c0;
+    background-color: rgb(255, 255, 255);
 }
 
 .rewamp p {
-    font-size: 12px;
+    font-size: 18px;
     margin: 2px 0;
+    font-weight: 600;
+}
+
+.rewamp p:hover{
+    color:#3d349e;
 }
 
 .rewamp img {
@@ -352,15 +446,7 @@ select {
     top: 20px;
     right: 10%;
 }
-/* 404 */
-
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
-}
-
+/* Table styles */
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #e2e2e2;
+ }

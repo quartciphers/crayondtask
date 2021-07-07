@@ -14,7 +14,6 @@ app.use(express.static('public'));
 // EJS Templating Engine 
 app.set('view engine','ejs');
 
-
 //Routes
 app.get('/',(req,res)=>{
   
@@ -56,7 +55,7 @@ app.get('/timesheet',(req,res)=>{
       res.render('timesheet',{data:datum}); 
     });
      
-})
+});
 
 app.get('/todo',(req,res)=>{
     res.render('todo');   
@@ -86,3 +85,4 @@ app.get('/invoices',(req,res)=>{
     if (err) console.log("Error in server setup")
     console.log("Server listening on Port", PORT);
 });
+

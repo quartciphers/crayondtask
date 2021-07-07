@@ -1,0 +1,69 @@
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Add Project </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form action="/" method="POST">
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row mb-4">
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="ProjectName" name="ProjectName"class="form-control" />
+                      <label class="form-label" for="ProjectName">Project Name </label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="ProjectID" name="ProjectID" class="form-control" />
+                      <label class="form-label" for="ProjectID">Project ID</label>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Text input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="ProjectManager" name="ProjectManager" class="form-control" />
+                  <label class="form-label" for="ProjectManager">Project Manager  </label>
+                </div>
+              
+                <!-- Text input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="TeamName" name="TeamName" class="form-control" />
+                  <label class="form-label" for="TeamName">Team Name</label>
+                </div>
+              
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="TeamLead" name="TeamLead" class="form-control" />
+                  <label class="form-label" for="TeamLead">Team Lead</label>
+                </div>
+              
+                <!-- Number input -->
+                <div class="form-outline mb-4">
+                  <input type="number" id="SectorNumber" name="SectorNumber" class="form-control" />
+                  <label class="form-label" for="SectorNumber">Sector Number</label>
+                </div>
+              
+                <!-- Message input -->
+                <div class="form-outline mb-4">
+                  <textarea class="form-control" id="AddInfo" name="AddInfo"rows="4"></textarea>
+                  <label class="form-label" for="AddInfo">Additional information</label>
+                </div>
+              
+            
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Sumbit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>

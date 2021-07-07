@@ -1,32 +1,42 @@
-<%- include('partials/main')  %> 
- <%- include('partials/sidebar')  %> 
-  <%- include('partials/header')  %> 
-  <div id="mid" class="mid-sec">
-    <table class="table table-bordered table-striped view-tbl">
-      <thead>
-          <tr>
-              <th>Project</th>
-              <th>Project ID</th>
-              <th>Team Name</th>
-              <th>Team Lead</th>
-              <th>Project Manager</th>
-          </tr>
-      </thead>
-      <tbody class="tbl-info">
-          
-       <% data.forEach(data => { %>
-        <tr>
-                
-            <td> <%= data.projectName  %>  </td>
-            <td> <%= data.projectId %>  </td>
-            <td> <%= data.teamName %>  </td>
-            <td> <%= data.teamLead  %> </td>
-            <td> <%= data.projectManager %> </td>
-        </tr>
 
-       <% }) %>
-            
-         
-      </tbody>
-  </table>
+<%- include('partials/main')  %> 
+<div class="row">
+  <div class="col-md-3 col-lg-3 col-sm-12 col-12 p-0">
+    <%- include ('partials/sidebar') %>
+  </div>
+  <div class="col-md-9 col-lg-9 col-sm-12 col-12 p-0">
+    <%- include ('partials/header') %>
+    <div id="mid" class="mid-sec">
+        <table class="table table-bordered table-striped view-tbl">
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Project ID</th>
+                    <th>Team Name</th>
+                    <th>Team Lead</th>
+                    <th>Project Manager</th>
+                </tr>
+            </thead>
+            <tbody class="tbl-info">
+                
+             <% data.forEach(data => { %>
+              <tr>
+                      
+                  <td> <%= data.projectName  %>  </td>
+                  <td> <%= data.projectId %>  </td>
+                  <td> <%= data.teamName %>  </td>
+                  <td> <%= data.teamLead  %> </td>
+                  <td> <%= data.projectManager %> </td>
+              </tr>
+      
+             <% }) %>
+                  
+               
+            </tbody>
+        </table>
+    </div>
+  </div>
+
 </div>
+
+<%- include('partials/modal')  %> 

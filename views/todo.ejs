@@ -1,6 +1,63 @@
 <%- include('partials/main')  %> 
- <%- include('partials/sidebar')  %> 
-  <%- include('partials/header')  %> 
-<div id="mid" class="mid-sec">
+<div class="row">
+  <div class="col-md-3 col-lg-3 col-sm-12 col-12 p-0">
+    <%- include ('partials/sidebar') %>
+  </div>
+  <div class="col-md-9 col-lg-9 col-sm-12 col-12 p-0">
+    <%- include ('partials/header') %>
+    <div id="mid" class="mid-sec">
+      <div class="row" style="display: flex;" >
+        <div class="col-md-8 col-lg-8 col-xl-8 col-sm-12 col-12 to-do">
+            <h6>To-Do-lists</h6>
+            <div class="row ml-0 mr-0">
+                <div class="col-1">
+                    <div class="date-sec">
+                        <p class="day">20</p>
+                        <p>May</p>
+                    </div>
+                </div>
+                <div class="col-11">
+                    <div class="rewamp">
+                        <p>Rewamp Instagram app</p>
+                        <p>Today</p>
+                        <img src="img/more.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row ml-0 mr-0 " style="display: flex;">
+                <div class="col-1">
+                    <div class="date-sec">
+                        <p class="day">21</p>
+                        <p>May</p>
+                    </div>
+                </div>
+                <div class="col-11">
+                    <div class="rewamp">
+                        <p>Prototyping </p>
+                        <p>Today</p>
+                        <img src="img/more.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row ml-0 mr-0 " style="display: flex;">
+                <div class="col-1">
+                    <div class="date-sec">
+                        <p class="day">22</p>
+                        <p>May</p>
+                    </div>
+                </div>
+                <div class="col-11">
+                    <div class="rewamp">
+                        <p>Collect Referencses for new project </p>
+                        <p>Today</p>
+                        <img src="img/more.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
 
 </div>
+
+<%- include('partials/modal')  %> 
