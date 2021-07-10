@@ -463,6 +463,7 @@ select {
 
 @media only screen and (max-width: 480px){
     .sidenav {
+        visibility: hidden;
         z-index: 1;
         /* min-width: 17rem; */
         width: 100%;   
@@ -473,7 +474,7 @@ select {
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
         transition: all 0.4s;
         background-color: #382f9c;
-        overflow-x: hidden;
+        overflow: hidden;
         transition: 0.5s;
         padding-top: 20px;
         background-image: url(img/sidebar_overlay.png) !important;
@@ -481,7 +482,9 @@ select {
         background-attachment: fixed !important;
         background-position-x: left !important;
         background-position-y: bottom !important;
-        background-size: 2.5%;
+        background-size: 8.5%;
+        overflow-y: hidden; /* Hide vertical scrollbar */
+        overflow-x: hidden; /* Hide horizontal scrollbar */
     }
     #tog-arrow img{
         border-radius: 50%;
